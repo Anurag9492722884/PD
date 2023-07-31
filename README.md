@@ -1,3 +1,5 @@
+ #   PDetect
+
 **PROBLEM:**
 
 1)With the growing number of the aged population, the number of Parkinson’s disease (PD) affected people is also mounting. Unfortunately, due to insufficient resources and awareness in underdeveloped countries, proper and timely PD detection is highly challenged. Besides, all PD patients’ voice features are neither the same nor do they all become pronounced at the same stage of the illness. Therefore, our work aims to combine more than one voice feature for detecting PD patients in developing countries.
