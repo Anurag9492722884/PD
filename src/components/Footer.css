@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+*{
+  font-family: Poppins,sans-serif;
+}
+
+footer{
+  position: relative;
+  background-color: #8158AC;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  overflow: hidden;
+}
+.footer--parts{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer--part1{
+  width: 38%;
+  font-size: 18px;
+  line-height: 28px;
+  color: #C19DE7;
+}
+.footer--part2 {
+  width: 10%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.footer--part2::before, .footer--part2::after{
+  content: "";
+  width: 0.5px;
+  height: 180px;
+  background-color: white;
+  position: absolute;
+}
+.footer--part2::before{
+  left: -75px;
+}
+.footer--part2::after{
+  right: -75px;
+}
+.footer--part2 a{
+  text-decoration: none;
+  color: #ffffffb8;
+  font-size: 24px;
+}
+.footer--part2 a:hover{
+  color: #ffffff;
+  font-weight: bold;
+}
+.footer--part2 ul{
+  list-style-type: none;
+}
+.footer--logo{
+  margin-top: 20px;
+  margin-left: 80px;
+  height: 100px;
+  width: 300px;
+}
+.neural_ninjas{
+  height: 250px;
+  width: 250px;
+}
+.icons {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 25px;
+  margin-left: 80px;
+  width: 100%;
+}
+
+.icon1 {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 3vh;
+  color: #fff;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property:
+      outline-offset, outline-color,
+      background-color;
+  transition-duration: .25s;
+}
+
+.icon1:hover {
+  outline-offset: 4px;
+}
+
+.icon1:hover i {
+  animation: shake .25s;
+}
+
+.icon--twitter:hover {
+  background-color: #1da1f2;
+  outline-color: #1da1f2;
+}
+
+.icon--wikipedia:hover {
+  background-color: white;
+  color: black;
+  outline-color: white;
+}
+
+.icon--github:hover {
+  background-color: black;
+  color: white;
+  outline-color: black;
+}
+
+@keyframes shake {
+  10% {
+      transform: rotate(15deg);
+  }
+
+  20% {
+      transform: rotate(-15deg);
+  }
+
+  30% {
+      transform: rotate(15deg);
+  }
+
+  40% {
+      transform: rotate(-15deg);
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .footer--part2 {
+    display: none;
+  }
+  .footer--parts{
+    flex-direction: column;
+  }
+  .footer--part1{
+    width: 80%;
+  }
+  .footer--part2 {
+    width: 80%;
+  }
+  .icons{
+    margin: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer--logo{
+    margin: 0 auto;
+    width: 270px;
+  }
+  .footer--part1{
+    font-size: 14px;
+  }
+} 
